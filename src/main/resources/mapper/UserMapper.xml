@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.UserDao">
+    <resultMap type="User" id="userResultMap" >
+        <id property="userAccount" column="UserAccount"/>
+        <result property="userPassword" column="UserPassword"/>
+    </resultMap>
+
+    <select id="userList" resultMap="userResultMap">
+        SELECT UserAccount,UserPassword
+          FROM User
+    </select>
+
+    <select id="userGet" resultMap="userResultMap" parameterType="String">
+        SELECT UserAccount,UserPassword
+        FROM User
+        WHERE  UserAccount= #{userAccount}
+    </select>
+
+    <insert id="userAdd" parameterType="User">
+        INSERT INTO User(UserAccount,UserPassword)
+          VALUE (#{userAccount},#{userPassword})
+    </insert>
+
+    <update id="userEdit" parameterType="User">
+        UPDATE User
+            SET UserPassword= #{userPassword}
+              WHERE  UserAccount= #{userAccount}
+    </update>
+
+    <delete id="userDel" parameterType="User">
+        DELETE FROM User
+          WHERE  UserAccount= #{userAccount} and UserPassword= #{userPassword}
+    </delete>
+
+</mapper>
