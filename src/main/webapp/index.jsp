@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%
     pageContext.setAttribute("path", request.getContextPath());
@@ -94,43 +94,44 @@
     input[type=text]:focus,
     input[type=password]:focus {
         border: 1px solid #a8c9e4;
-        box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;
+        box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #8BC34A;
     }
     /* submit */
     #lower {
-        background: #ecf2f5;
+        background: #f1f8e9;
         width: 100%;
-        height: 69px;
+        height: 75px;
         margin-top: 20px;
+		position: relative; 
     }
     input[type=submit] {
-        float: right;
-        margin-right: 20px;
-        margin-top: 20px;
-        width: 80px;
-        height: 30px;
-        font-size: 14px;
-        font-weight: bold;
-        color: #fff;
-        background-color: #acd6ef; /*IE fallback*/
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
-        background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-        background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-        border-radius: 30px;
-        border: 1px solid #66add6;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
-        cursor: pointer;
+		  position: absolute;
+		  left: 0;
+          right: 0;
+          bottom: 0;
+          top:0;
+          margin: auto;
+		  display: block; 
+		  width: 120px; 
+		  height: 45px; 
+		  background: #689F38;
+		  border-radius: 10px;
+		  font-size: 20px;
+		  font-weight: bold;
+		  color: #fff;
+		  outline: 0; 
+		  cursor: pointer; 
+		  border: 1px solid #8BC34A;
+		  box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
     }
-    input[type=submit]:hover {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
-        background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-        background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+	input[type=submit]:hover {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#689F38), to(#8BC34A));
     }
     input[type=submit]:active {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
-        background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
-        background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#8BC34A), to(#689F38));
     }
+}
+}
 
 </style>
 
@@ -138,7 +139,7 @@
 <body>
 <div id="container">
     <form>
-        <label for="managerAccount">ManagerAccount:</label>
+        <label for="managerAccount">Account:</label>
         <input type="text" id="managerAccount" name="managerAccount">
         <label for="managerPassword">Password:</label>
         <input type="password" id="managerPassword" name="managerPassword">
