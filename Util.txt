@@ -1,2 +1,5 @@
-1.MaterialDesignColor
-https://www.materialpalette.com/
+1.ColorDesign
+https://www.webdesignrankings.com/resources/lolcolors/
+
+2.WebStorm
+https://www.jianshu.com/p/4c81cf31b94d
