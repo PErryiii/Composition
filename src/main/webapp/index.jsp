@@ -13,7 +13,7 @@
 
 <html>
 <head>
-    <title>UT作文管理系统登录</title>
+    <title>登录</title>
 </head>
 
 <style type=text/css >
@@ -22,7 +22,7 @@
         height: 100%;
         font-family: "Helvetica Neue", Helvetica, sans-serif;
         color: #444;
-        -webkit-font-smoothing: antialiased;    background: #f0f0f0;
+        -webkit-font-smoothing: antialiased;    background: #FFCE00;
     }
     #container{
         position: fixed;
@@ -42,7 +42,7 @@
         margin-top: 20px;
     }
     label {
-        color: #555;
+        color: #37474f;
         display: inline-block;
         margin-left: 18px;
         padding-top: 10px;
@@ -58,7 +58,7 @@
         -webkit-transition: all .4s ease;
         -moz-transition: all .4s ease;
         transition: all .4s ease;
-        box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
+        box-shadow: inset 0 1.5px 3px rgba(220, 220, 220, .1), 0 0 0 5px #f5f7f8;
         -webkit-transition: all .4s ease;
         -moz-transition: all .4s ease;
         transition: all .4s ease;
@@ -82,23 +82,23 @@
         height: 35px;
         border: 1px solid #c7d0d2;
         border-radius: 2px;
-        box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
+        box-shadow: inset 0 1.1px 3px rgba(220, 220, 220, .1), 0 0 0 1px #eceff1;
         -moz-transition: all .4s ease;
         transition: all .4s ease;
     }
     input[type=text]:hover,
     input[type=password]:hover {
         border: 1px solid #b6bfc0;
-        box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0 0 0 5px #f5f7f8;
+        box-shadow: inset 0 1.5px 3px rgba(220, 220, 220, .3), 0 0 0 5px #cfd8dc;
     }
     input[type=text]:focus,
     input[type=password]:focus {
-        border: 1px solid #a8c9e4;
-        box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #8BC34A;
+        border: 1px solid #b6bfc0;
+        box-shadow: inset 0 1.5px 3px rgba(220, 220, 220, .1), 0 0 0 5px #cfd8dc;
     }
     /* submit */
     #lower {
-        background: #f1f8e9;
+        background: #cfd8dc;
         width: 100%;
         height: 75px;
         margin-top: 20px;
@@ -114,21 +114,21 @@
 		  display: block; 
 		  width: 120px; 
 		  height: 45px; 
-		  background: #689F38;
+		  background: #607d8b;
 		  border-radius: 10px;
 		  font-size: 20px;
 		  font-weight: bold;
 		  color: #fff;
 		  outline: 0; 
 		  cursor: pointer; 
-		  border: 1px solid #8BC34A;
+		  border: 1px solid #607d8b;
 		  box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
     }
 	input[type=submit]:hover {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#689F38), to(#8BC34A));
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#607d8b), to(#546e7a));
     }
     input[type=submit]:active {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#8BC34A), to(#689F38));
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#546e7a), to(#607d8b));
     }
 }
 }
